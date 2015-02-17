@@ -3,7 +3,7 @@ This project is a real time eye tracking system that runs on the Raspberry Pi de
 
 The peripherals used to create and modify the data for Pi-Eye are as follows:
 
-•	Image Normalizer (c#): This Program was created to easily collect and create the data we needed for the project. It would would normalize the image as well as scale it to 24x24 resolutions as well giving the option to split images into random
+•	Image Normalizer (C#): This Program was created to easily collect and create the data we needed for the project. It would would normalize the image as well as scale it to 24x24 resolutions as well giving the option to split images into random
 chunks(used to create the Not-face images). It then saves the data into files together with structured names to allow easy use.
 
 •	Integral Image Creator (Java): This took the now grouped images and created the Integral Images related to each one to allow for faster access by the C++ feature creator as Java could readily read and edit images.
@@ -14,4 +14,4 @@ chunks(used to create the Not-face images). It then saves the data into files to
 
 •	Eye Detector (C++ on Raspberry Pi): This Program is run on the pi an works by taking the best features created by the previous programs and using them to detect the face of the user, once it is found it finds areas that are most likely eyes and based of frequency and position determines weather or not it is an actual eye, from there it relays it via a serial to USB cable to the final program.
 
-•	Pi Interface Program (c#): This program takes advantage of c#’s ability to interface with serial to take the information the pi has sent and turn it into mouse movement as well as an embedded keyboard to allow typing from the mouse.
+•	Pi Interface Program (C#): This program takes advantage of c#’s ability to interface with serial to take the information the pi has sent and turn it into mouse movement as well as an embedded keyboard to allow typing from the mouse.
